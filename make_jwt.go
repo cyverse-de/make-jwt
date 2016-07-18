@@ -1,7 +1,6 @@
 package main
 
 import (
-	"configs"
 	"crypto/rsa"
 	"crypto/x509"
 	"encoding/pem"
@@ -15,6 +14,7 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/cyverse-de/configs"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/mitchellh/go-homedir"
 )

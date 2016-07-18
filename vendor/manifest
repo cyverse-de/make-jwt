@@ -1,0 +1,29 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/cyverse-de/configs",
+			"repository": "https://github.com/cyverse-de/configs",
+			"vcs": "git",
+			"revision": "761e0100c36443404c25743d7d851bc2de21330a",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/dgrijalva/jwt-go",
+			"repository": "https://github.com/dgrijalva/jwt-go",
+			"vcs": "git",
+			"revision": "f62f64ea222e5e6d6d86421b5507b0862a3ebf7f",
+			"branch": "HEAD",
+			"notests": true
+		},
+		{
+			"importpath": "github.com/mitchellh/go-homedir",
+			"repository": "https://github.com/mitchellh/go-homedir",
+			"vcs": "git",
+			"revision": "756f7b183b7ab78acdbbee5c7f392838ed459dda",
+			"branch": "master",
+			"notests": true
+		}
+	]
+}
