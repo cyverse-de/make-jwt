@@ -1,3 +1,4 @@
+#!groovy
 def repo = "make-jwt"
 def dockerUser = "discoenv"
 
