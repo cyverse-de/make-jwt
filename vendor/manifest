@@ -5,7 +5,7 @@
 			"importpath": "github.com/cyverse-de/configs",
 			"repository": "https://github.com/cyverse-de/configs",
 			"vcs": "git",
-			"revision": "761e0100c36443404c25743d7d851bc2de21330a",
+			"revision": "5510a53a8127b4fdf80ea1e5d53a0b4e71425738",
 			"branch": "master",
 			"notests": true
 		},
@@ -13,15 +13,23 @@
 			"importpath": "github.com/dgrijalva/jwt-go",
 			"repository": "https://github.com/dgrijalva/jwt-go",
 			"vcs": "git",
-			"revision": "f62f64ea222e5e6d6d86421b5507b0862a3ebf7f",
-			"branch": "HEAD",
+			"revision": "dbeaa9332f19a944acb5736b4456cfcc02140e29",
+			"branch": "master",
 			"notests": true
 		},
 		{
 			"importpath": "github.com/mitchellh/go-homedir",
 			"repository": "https://github.com/mitchellh/go-homedir",
 			"vcs": "git",
-			"revision": "756f7b183b7ab78acdbbee5c7f392838ed459dda",
+			"revision": "b8bc1bf767474819792c23f32d8286a45736f1c6",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/dgrijalva/jwt-go.v2",
+			"repository": "https://gopkg.in/dgrijalva/jwt-go.v2",
+			"vcs": "git",
+			"revision": "268038b363c7a8d7306b8e35bf77a1fde4b0c402",
 			"branch": "master",
 			"notests": true
 		}

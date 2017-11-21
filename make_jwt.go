@@ -171,31 +171,34 @@ func getEntitlement() []string {
 }
 
 func generateToken(key *rsa.PrivateKey) (string, error) {
-	token := jwt.New(jwt.SigningMethodRS256)
 
-	// Add the claims to the token.
+	// Build the claims map.
+	claims := jwt.MapClaims{}
 	if *username != "" {
-		token.Claims[*usernameClaim] = *username
+		claims[*usernameClaim] = *username
 	}
 	if *email != "" {
-		token.Claims[*emailClaim] = *email
+		claims[*emailClaim] = *email
 	}
 	if *givenName != "" {
-		token.Claims[*givenNameClaim] = *givenName
+		claims[*givenNameClaim] = *givenName
 	}
 	if *familyName != "" {
-		token.Claims[*familyNameClaim] = *familyName
+		claims[*familyNameClaim] = *familyName
 	}
 	if *name != "" {
-		token.Claims[*nameClaim] = *name
+		claims[*nameClaim] = *name
 	}
 	if *entitlement != "" {
-		token.Claims[*entitlementClaim] = getEntitlement()
+		claims[*entitlementClaim] = getEntitlement()
 	}
 
 	// Set the token expiration time.
 	duration := time.Duration(*tokenLifetime) * time.Second
-	token.Claims["exp"] = time.Now().Add(duration).Unix()
+	claims["exp"] = time.Now().Add(duration).Unix()
+
+	// Build the JWT.
+	token := jwt.NewWithClaims(jwt.SigningMethodRS256, claims)
 
 	// Sign and encode the token.
 	return token.SignedString(key)
