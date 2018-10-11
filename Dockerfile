@@ -1,6 +1,7 @@
-FROM golang:1.8-alpine
+FROM golang:1.11-alpine
 
 COPY . /go/src/github.com/cyverse-de/make-jwt
+ENV CGO_ENABLED=0
 RUN go install github.com/cyverse-de/make-jwt
 
 ENTRYPOINT ["make-jwt"]
