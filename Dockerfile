@@ -2,11 +2,12 @@ FROM golang:1.13-alpine
 
 COPY . /go/src/github.com/cyverse-de/make-jwt
 ENV CGO_ENABLED=0
-RUN wget https://github.com/upx/upx/releases/download/v3.95/upx-3.95-amd64_linux.tar.xz \
- && tar -xJvf upx-3.95-amd64_linux.tar.xz upx-3.95-amd64_linux/upx \
- && go install github.com/cyverse-de/make-jwt \
- && ./upx-3.95-amd64_linux/upx --ultra-brute /go/bin/make-jwt \
- && rm -rf upx-3.95-amd64_linux*
+RUN go install github.com/cyverse-de/make-jwt
+# RUN wget https://github.com/upx/upx/releases/download/v3.95/upx-3.95-amd64_linux.tar.xz \
+#  && tar -xJvf upx-3.95-amd64_linux.tar.xz upx-3.95-amd64_linux/upx \
+#  && go install github.com/cyverse-de/make-jwt \
+#  && ./upx-3.95-amd64_linux/upx --ultra-brute /go/bin/make-jwt \
+#  && rm -rf upx-3.95-amd64_linux*
 
 ENTRYPOINT ["make-jwt"]
 CMD ["--help"]
