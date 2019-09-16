@@ -1,0 +1,6 @@
+github.com/cyverse-de/configs v0.0.0-20170404194355-5510a53a8127 h1:5t88qcwJcfFbuTERcsF93vCKrUJgQTCMz54PTt7bdio=
+github.com/cyverse-de/configs v0.0.0-20170404194355-5510a53a8127/go.mod h1:vYukjDx1l/kMtdV0HW1YJaXAKlAUIZ6cDc0t8HLvsoU=
+github.com/dgrijalva/jwt-go v3.1.0+incompatible h1:FFziAwDQQ2dz1XClWMkwvukur3evtZx7x/wMHKM1i20=
+github.com/dgrijalva/jwt-go v3.1.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
+github.com/mitchellh/go-homedir v0.0.0-20161203194507-b8bc1bf76747 h1:eQox4Rh4ewJF+mqYPxCkmBAirRnPaHEB26UkNuPyjlk=
+github.com/mitchellh/go-homedir v0.0.0-20161203194507-b8bc1bf76747/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrkLzIz1N1q0pr0=

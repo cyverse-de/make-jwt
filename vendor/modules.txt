@@ -1,0 +1,6 @@
+# github.com/cyverse-de/configs v0.0.0-20170404194355-5510a53a8127
+github.com/cyverse-de/configs
+# github.com/dgrijalva/jwt-go v3.1.0+incompatible
+github.com/dgrijalva/jwt-go
+# github.com/mitchellh/go-homedir v0.0.0-20161203194507-b8bc1bf76747
+github.com/mitchellh/go-homedir
